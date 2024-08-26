@@ -1,8 +1,14 @@
 
-package MultipleInheritance;
+package SuperKeyword;
 
-public interface B {
+public class B extends A {
+  
     
-    void play();
+    
+   B(){
+       super(); 
+       System.out.println("B's cinstructor");  
+        
+    }
     
 }
