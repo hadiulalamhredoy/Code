@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+double base,heigth,area;
+cout << "Enter Base : " ;
+cin>> base;
+cout << "Enter Heigth : " ;
+cin>> heigth;
+area = 0.5 * base * heigth;
+cout << "Area of a Triangle is :"<< area;
+
+return 0;
+}
