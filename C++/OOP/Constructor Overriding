@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+class Student
+{
+public:
+int id;
+double cgpa;
+void display()
+{
+cout << id << " " << cgpa << endl;
+}
+void setVaule(int x , double y)
+{
+id = x;
+cgpa = y;
+}
+
+Student (int x , double y)
+{
+id = x;
+cgpa = y;
+}
+
+Student()
+{
+cout << "Default constructor" <<endl;
+}
+
+};
+
+int main()
+{
+Student ob;
+Student Oishee(214,3.5);
+Oishee.display();
+
+return 0;
+}
+
