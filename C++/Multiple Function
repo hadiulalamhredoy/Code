@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+
+void addition(int,int);
+void subtraction(int,int);
+void multipication(int,int);
+void division(int,int);
+
+int main()
+{
+addition(20,30);
+subtraction(20,30);
+multipication(20,30);
+division (20,30);
+
+}
+
+void addition(int a, int b)
+{
+int sum = a + b;
+cout<<"sum = " <<sum<<endl;
+
+}
+
+void subtraction(int a, int b)
+{
+int result = a - b;
+cout<<"subtraction = " <<result<<endl;
+
+}
+
+void multipication(int a, int b)
+{
+int result = a*b;
+cout<<" Multipication = " <<result<<endl;
+
+}
+
+void division(int a, int b)
+{
+float result = (float) a/b;
+cout<<"division = " <<result<<endl;
+
+}
