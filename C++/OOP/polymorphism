@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+class Person
+{
+public :
+void display()
+{
+cout << "I am a Person";
+
+}
+};
+
+class Student : public Person
+{
+void display()
+{
+cout << " I am a Student ";
+
+}
+
+};
+
+class Teacher : public Person
+{
+cout <<" I am a Teacher ";
+
+};
+
+int main() {
+Person p;
+p.display();
+Student s;
+s.display();
+Teacher t;
+t.display();
+
+return 0;
+}
