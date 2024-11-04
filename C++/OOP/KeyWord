@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+class Student
+{
+public :
+string name;
+Student (string x)
+{
+this -> name = name;
+}
+void display()
+{
+cout << name <<endl;
+}
+};
+
+int main() {
+Student s1("Oishee");
+s1.display();
+return 0;
+}
