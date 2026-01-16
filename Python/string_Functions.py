@@ -1,0 +1,13 @@
+a = input("Enter a string: ")
+
+print("The length of the string is:", len(a))
+print("The string in uppercase is:", a.upper())
+print("The string in lowercase is:", a.lower())
+print("The string in title: ", a.title())   
+print("The string in capitalize:",a.capitalize())
+print("The string in swapcase:",a.swapcase())
+print("The count of 'a' in the string is:", a.count('a'))
+print("The string after replacing 'a' with 'o' is:", a.replace('a', 'o'))
+print("The string is start with Py", a.startswith("Py"))
+print("The string is end with", a.endswith("ing"))
+print("How many as' in the string: ", a.count("a"))
