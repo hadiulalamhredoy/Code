@@ -48,3 +48,60 @@ DBMS-Fundamentals/
 
 ```sql
 CREATE DATABASE StudentDB;
+
+CREATE TABLE Students (
+    student_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    department VARCHAR(50),
+    age INT
+);
+
+
+
+INSERT INTO Students (student_id, name, department, age)
+VALUES
+(1, 'Rahim', 'CSE', 22),
+(2, 'Karim', 'EEE', 23),
+(3, 'Sakib', 'BBA', 21);
+
+
+DELETE FROM Students
+WHERE student_id = 3;
+
+UPDATE Students
+SET age = 24
+WHERE student_id = 2;
+
+SELECT * FROM Students;
+
+
+🔑 Types of Keys in DBMS
+
+| Key Type      | Description                     |
+| ------------- | ------------------------------- |
+| Primary Key   | Uniquely identifies each record |
+| Foreign Key   | Connects two tables             |
+| Candidate Key | Possible primary keys           |
+| Super Key     | Set of unique attributes        |
+
+
+🔄 Normalization Levels
+1NF
+Remove repeating groups
+2NF
+Remove partial dependency
+3NF
+Remove transitive dependency
+
+
+SELECT Students.name, Courses.course_name
+FROM Students
+INNER JOIN Courses
+ON Students.student_id = Courses.student_id;
+
+⚡ DBMS Advantages
+Reduces data redundancy
+Improves data consistency
+Better security
+Multi-user access
+Backup and recovery support
